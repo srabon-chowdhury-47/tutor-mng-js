@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../favicon_io (1)/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #247a69, #4d8496, #402c64);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-container {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about-heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .features {
+            margin-top: 50px;
+        }
+
+        .feature-box {
+            margin-bottom: 30px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            animation: slideInLeft 1.5s ease-in-out;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #00d9ff;
+            margin-right: 15px;
+        }
+
+        .team-section {
+            margin-top: 70px;
+        }
+
+        .team-heading {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        .team-member {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            animation: scaleUp 1.5s ease-in-out;
+        }
+
+        .team-photo {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-photo:hover {
+            transform: scale(1.1);
+        }
+
+        .team-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tutor Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./teachers.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./students.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-container">
+        <h1 class="about-heading">About Us</h1>
+        <p class="about-content">
+            Welcome to the Tutor Management System! Our platform is designed to bridge the gap between educators and learners, 
+            ensuring a seamless and efficient management experience. From managing student records to scheduling courses, 
+            we are here to revolutionize the way institutions operate. Our intuitive interface, advanced features, and focus on user experience 
+            make us a leading solution in education technology.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features container">
+        <div class="feature-box">
+            <i class="fas fa-cogs feature-icon"></i>
+            <strong>Comprehensive Tools:</strong> From managing teachers to scheduling courses, our system provides a complete management suite.
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-users feature-icon"></i>
+            <strong>User-Centric Design:</strong> Easy-to-use and navigate for students, teachers, and administrators.
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-chart-line feature-icon"></i>
+            <strong>Data Insights:</strong> Gain valuable insights into performance metrics and resource utilization.
+        </div>
+    </section>
+
+    <!-- Team Section -->
+     <div class="container">
+        <section class="team-section">
+            <h2 class="team-heading">Meet Our Team</h2>
+            
+            <div class="team-member">
+                <img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/464861291_1086056079541272_5689164249152932218_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGjav6uN5W2eWUU0mP29AviY17ySuvLlpFjXvJK68uWkf7WXJhyIVu7U5mDV2XeDk-4b7j1nF_V-HTYQH0bSnJY&_nc_ohc=z-H6__uktW0Q7kNvgFSXs5S&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=AxpkoZRG_libVcgNvu7Ye9g&oh=00_AYCiZ8KggVaOnYsFPTqj7eiUfx56YTG4YoP1e5w1fK8Y6Q&oe=678EDC87" alt="Team Member" class="team-photo">
+                <p class="team-name">Md. Srabon Chowdhury</p>
+                <p>Lead Developer</p>
+                <p>Bsc : Computer Science and Engineering - IUBAT</p>
+            </div>
+        </section>
+    
+     </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 Tutor Management System. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
